@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "delivery-packer":          "0.2.0",
-        "msg-js-spa-framework":     "0.3.12",
+        "msg-js-spa-framework":     "0.4.0",
         "msg-js-spa-widgets":       "0.1.23"
     },
     "keywords": [
@@ -42,8 +42,8 @@
         "grunt-text-replace":    "0.4.0",
         "load-grunt-tasks":      "3.5.2",
         "moment":                "2.15.1",
-        "lodash":                "4.16.2",
-        "upd":                   "1.1.11",
+        "lodash":                "4.16.3",
+        "upd":                   "1.1.12",
         "grunt-babel":           "6.0.0",
         "babel":                 "6.5.2",
         "babel-plugin-transform-es2015-template-literals":      "6.8.0",
@@ -60,19 +60,20 @@
         "babel-plugin-transform-es2015-unicode-regex":          "6.11.0",
         "babel-plugin-check-es2015-constants":                  "6.8.0",
         "babel-plugin-transform-es2015-spread":                 "6.8.0",
-        "babel-plugin-transform-es2015-parameters":             "6.11.4",
-        "babel-plugin-transform-es2015-destructuring":          "6.9.0",
+        "babel-plugin-transform-es2015-parameters":             "6.17.0",
+        "babel-plugin-transform-es2015-destructuring":          "6.16.0",
         "babel-plugin-transform-es2015-block-scoping":          "6.15.0",
         "babel-plugin-transform-es2015-typeof-symbol":          "6.8.0",
-        "babel-plugin-transform-es2015-modules-commonjs":       "6.14.0",
-        "babel-plugin-transform-regenerator":                   "6.14.0",
-        "babel-polyfill":                                       "6.13.0"
+        "babel-plugin-transform-es2015-modules-commonjs":       "6.16.0",
+        "babel-plugin-transform-regenerator":                   "6.16.1",
+        "babel-polyfill":                                       "6.16.0"
     },
     "engines": {
         "node":                 ">=0.10.0"
     },
     "scripts": {
         "prepublish":  "npm run upd",
+        "start":       "grunt",
         "upd":         "upd -n"
     }
 }
