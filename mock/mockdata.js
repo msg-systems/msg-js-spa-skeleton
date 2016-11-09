@@ -1,7 +1,7 @@
 "use strict"
 module.exports = (() => {
 
-    const mockdata = require('msg-js-spa-framework/mockdata-registry')
+    const mockdata = require('uica-stack/mockdata-registry')
 
     // Sequenz Ids
     mockdata.userId = 1;

@@ -188,7 +188,7 @@ module.exports = function (grunt) {
                 ],
                 overwrite: true,
                 replacements: [
-                    {from: "node_modules/msg-js-spa-framework", to: "../node_modules/msg-js-spa-framework"}
+                    {from: "node_modules/uica-stack", to: "../node_modules/uica-stack"}
                 ]
             },
             "app-css": {

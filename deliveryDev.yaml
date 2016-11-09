@@ -4,8 +4,8 @@
 ##  Copyright (c) 2016 msg systems ag (http://www.msg-systems.com/)
 ##
 import:
-- msg-js-spa-framework
-- msg-js-spa-widgets
+- uica-stack
+- uica-widgets
 - delivery/**/*.yaml
 build:
 - "!spa-fw.componentjs.jquery"

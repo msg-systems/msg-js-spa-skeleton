@@ -2,7 +2,7 @@
 
 Hello, here is the Skeleton for a HTML5 Single-Page-Application.
 
-This Skeleton shows how easy it is to build a new app with help of the msg-js-spa-framework.
+This Skeleton shows how easy it is to build a new single page app with help of the uica-stack.
 
 
 

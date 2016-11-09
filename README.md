@@ -1,8 +1,8 @@
-# msg-js-spa-skeleton
-This JavaScript SinglePageApp(SPA) Skeleton is a simple project using the [msg-js-spa-framework](https://github.com/msg-systems/msg-js-spa-framework).
+# uica-skeleton
+This User Interface Component Architecture (UICA) Skeleton for single page applications is a simple project using the [uica-stack](https://github.com/msg-systems/uica-stack).
 
 ## Purpose
-The `msg-js-spa-skeleton` is the skeleton project demonstrating the usage of the [msg-js-spa-framework](https://github.com/msg-systems/msg-js-spa-framework).
+The `uica-skeleton` is the skeleton project demonstrating the usage of the [uica-stack](https://github.com/msg-systems/uica-stack).
 
 It includes:
 
@@ -16,7 +16,7 @@ To run the SPA skeleton project fork and clone it.
 
 The project is based on [node.js](https://nodejs.org/en/). Ensure that you have at least one node virtual machine available on your client.
 
-Once `node.js` and the `msg-js-spa-skeleton` project are available you can use the node package manager (`npm`) to install all projects dependencies (folder node_modules will be created):
+Once `node.js` and the `uica-skeleton` project are available you can use the node package manager (`npm`) to install all projects dependencies (folder node_modules will be created):
 
 ```shell
 cd %PROJECT_ROOT%
@@ -30,7 +30,7 @@ npm config set proxy=http://{{proxy name or ip}}:{{proxy port}}/
 npm config set https-proxy=https://{{proxy name or ip}}:{{proxy port}}/
 ```
 
-After the `npm` install is done you can run the `msg-js-spa-skeleton` build process
+After the `npm` install is done you can run the `uica-skeleton` build process
 
 ```shell
 npm start

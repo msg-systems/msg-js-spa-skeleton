@@ -1,25 +1,27 @@
 {
-    "name":        "msg.SPA.Skeleton",
-    "description": "msg.SPA Skeleton",
+    "name":        "uica-skeleton",
+    "description": "User Interface Component Architecture (UICA) Skeleton",
     "license":     "MIT",
     "repository": {
         "type": "git",
-        "url":  "https://github.com/msg-systems/msg-js-spa-skeleton.git"
+        "url":  "https://github.com/msg-systems/uica-skeleton.git"
     },
     "bugs": {
-        "url":  "https://github.com/msg-systems/msg-js-spa-skeleton/issues"
+        "url":  "https://github.com/msg-systems/uica-skeleton/issues"
     },
     "dependencies": {
         "delivery-packer":          "0.2.0",
-        "msg-js-spa-framework":     "0.4.0",
-        "msg-js-spa-widgets":       "0.1.23"
+        "uica-stack":               "0.9.0",
+        "uica-widgets":             "0.9.1"
     },
     "keywords": [
         "single",
         "page",
         "app",
         "spa",
-        "skeleton"
+        "skeleton",
+        "uica",
+        "user interface component architecture"
     ],
     "devDependencies": {
         "connect-rest":          "1.4.2",
