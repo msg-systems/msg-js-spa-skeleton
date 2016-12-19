@@ -12,7 +12,8 @@
     "dependencies": {
         "delivery-packer":          "0.2.0",
         "uica-stack":               "0.9.0",
-        "uica-widgets":             "0.9.1"
+        "uica-widgets":             "0.9.1",
+        "codingpolicyjs":           "0.1.7"
     },
     "keywords": [
         "single",
@@ -75,7 +76,9 @@
     },
     "scripts": {
         "prepublish":  "npm run upd",
-        "start":       "grunt",
-        "upd":         "upd -n"
+        "dev":         "grunt",
+        "start":       "grunt prod",
+        "upd":         "upd -n",
+        "policy":      "codingpolicy -r ./src codingpolicy.yaml"
     }
 }
