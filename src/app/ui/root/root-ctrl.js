@@ -5,7 +5,8 @@ ___config.package___.ctrl = cs.clazz({
         app.trait.root.businessservices.ctrl
     ],
     dynamics: {
-        header: null
+        header: null,
+        vueExampleComponent: null
     },
     protos: {
 
@@ -14,6 +15,7 @@ ___config.package___.ctrl = cs.clazz({
             cs(this).property('ComponentJS:state-auto-increase', true)
             // create a header component -> the name "header" must be used as scope name if a scoped socket is used for this component in the view
             this.header = this.view.create("header", app.ui.composite.header.ctrl)
+            this.vueExampleComponent = this.view.create("vueExample", app.ui.composite.vueExample.ctrl)
         },
 
         setup () {

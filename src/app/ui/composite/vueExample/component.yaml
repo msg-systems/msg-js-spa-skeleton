@@ -1,0 +1,3 @@
+package: "app.ui.composite.vueExample"
+id: "appVueExample"
+desc: "Eine Komponente die verschiedene Beispiele zur Verwendung von VueJS als Databinding aufzeigen soll."

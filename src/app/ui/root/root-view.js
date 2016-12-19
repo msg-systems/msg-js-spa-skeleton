@@ -21,9 +21,9 @@ ___config.package___.view = cs.clazz({
             // must be the same as the name of the component, that is defined in the controller at it's creation
             // the ctx (context) must be a container in the DOM
             cs(this).socket({scope: "header", ctx: this.header, spool: cs(this).state()})
-            cs(this).socket({ctx: this.container, spool: cs(this).state()})
-
-            $(".splash", "body").hide();
+            // default socket, here components will be plugged that do not have a explicit named or scoped socket
+            cs(this).socket({ctx: this.main, spool: cs(this).state()})
+            
         },
 
         release () {
