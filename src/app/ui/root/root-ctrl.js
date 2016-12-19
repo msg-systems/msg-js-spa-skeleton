@@ -4,12 +4,16 @@ ___config.package___.ctrl = cs.clazz({
     mixin: [
         app.trait.root.businessservices.ctrl
     ],
-    dynamics: {},
+    dynamics: {
+        header: null
+    },
     protos: {
 
         create () {
             this.base(___config.package___.model, ___config.package___.view)
             cs(this).property('ComponentJS:state-auto-increase', true)
+            // create a header component -> the name "header" must be used as scope name if a scoped socket is used for this component in the view
+            this.header = this.view.create("header", app.ui.composite.header.ctrl)
         },
 
         setup () {
