@@ -11,9 +11,9 @@
     },
     "dependencies": {
         "delivery-packer":          "0.2.0",
-        "uica-stack":               "0.9.7",
-        "uica-widgets":             "0.9.1",
-        "codingpolicyjs":           "0.1.7"
+        "uica-stack":               "0.9.8",
+        "uica-widgets":             "0.9.2",
+        "codingpolicyjs":           "0.1.8"
     },
     "keywords": [
         "single",
@@ -45,8 +45,8 @@
         "grunt-text-replace":    "0.4.0",
         "load-grunt-tasks":      "3.5.2",
         "moment":                "2.17.1",
-        "lodash":                "4.17.2",
-        "upd":                   "1.1.15",
+        "lodash":                "4.17.4",
+        "upd":                   "1.1.18",
         "grunt-babel":           "6.0.0",
         "babel":                 "6.5.2",
         "babel-plugin-transform-es2015-template-literals":      "6.8.0",

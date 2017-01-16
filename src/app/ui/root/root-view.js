@@ -4,26 +4,13 @@ ___config.package___.view = cs.clazz({
     dynamics: {
         markupName: '___config.id___',
         container: null,
-        header: null,
-        main: null,
         useDefaultPlug: false
     },
     protos: {
 
         render () {
-            this.base();
-
-            this.ui.appendTo(this.container);
-
-            /*  let children plug into defined sockets */
-
-            // scoped socket for the header component - the name of the scope = "header"
-            // must be the same as the name of the component, that is defined in the controller at it's creation
-            // the ctx (context) must be a container in the DOM
-            cs(this).socket({scope: "header", ctx: this.header, spool: cs(this).state()})
-            // default socket, here components will be plugged that do not have a explicit named or scoped socket
-            cs(this).socket({ctx: this.main, spool: cs(this).state()})
-            
+            this.base()
+            this.ui.appendTo(this.container)
         },
 
         release () {
@@ -34,8 +21,6 @@ ___config.package___.view = cs.clazz({
         prepareMaskReferences () {
             this.base()
             this.container = $('body')
-            this.header = $('.appHeaderCont', this.ui)
-            this.main = $('.appMainCont', this.ui)
         }
 
     }
