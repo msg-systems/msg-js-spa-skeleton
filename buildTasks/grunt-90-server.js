@@ -1,7 +1,7 @@
 /* global global: false */
 module.exports = function (grunt) {
 
-    grunt.loadTasks("node_modules/lite-proxyServer")
+    grunt.loadNpmTasks("lite-proxyServer")
 
     grunt.extendConfig({
         watch: {
@@ -22,7 +22,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask("serverDev", ["proxyServer", "focus:watchDev"]);
-    grunt.registerTask("server", ["proxyServer", "focus:watchProd"]);
+    grunt.registerTask("serverDev", ["lite-proxyserver", "focus:watchDev"]);
+    grunt.registerTask("server", ["lite-proxyserver", "focus:watchProd"]);
 
 };
