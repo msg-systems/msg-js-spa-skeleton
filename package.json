@@ -1,5 +1,6 @@
 {
     "name":        "uica-skeleton",
+    "version":     "1.0.1",
     "description": "User Interface Component Architecture (UICA) Skeleton",
     "license":     "MIT",
     "repository": {
@@ -11,7 +12,7 @@
     },
     "dependencies": {
         "delivery-packer":          "0.2.0",
-        "uica-stack":               "0.9.18",
+        "uica-stack":               "0.10.1",
         "uica-widgets":             "0.9.5",
         "codingpolicyjs":           "0.1.8"
     },
@@ -25,14 +26,14 @@
         "user interface component architecture"
     ],
     "devDependencies": {
-        "grunt":                 "1.0.1",
+        "grunt":                 "1.0.2",
         "grunt-cli":             "1.2.0",
         "grunt-contrib-clean":   "1.1.0",
         "grunt-contrib-concat":  "1.0.1",
         "grunt-contrib-copy":    "1.0.0",
         "grunt-contrib-jshint":  "1.1.0",
         "grunt-contrib-less":    "1.4.1",
-        "grunt-contrib-uglify":  "3.2.1",
+        "grunt-contrib-uglify":  "3.3.0",
         "grunt-contrib-watch":   "1.0.0",
         "grunt-extend-config":   "0.9.5",
         "grunt-include-source":  "1.1.0",
@@ -42,9 +43,9 @@
         "grunt-text-replace":    "0.4.0",
         "load-grunt-tasks":      "3.5.2",
         "lite-proxyserver":      "0.5.3",
-        "moment":                "2.19.4",
-        "lodash":                "4.17.4",
-        "upd":                   "1.2.15",
+        "moment":                "2.20.1",
+        "lodash":                "4.17.5",
+        "upd":                   "1.2.17",
         "grunt-babel":           "7.0.0",
         "babel-cli":             "6.26.0",
         "babel-preset-env":      "~1.6.1",
