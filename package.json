@@ -1,6 +1,6 @@
 {
     "name":        "uica-skeleton",
-    "version":     "1.0.1",
+    "version":     "1.0.2",
     "description": "User Interface Component Architecture (UICA) Skeleton",
     "license":     "MIT",
     "repository": {
@@ -12,9 +12,9 @@
     },
     "dependencies": {
         "delivery-packer":          "0.2.0",
-        "uica-stack":               "0.10.1",
+        "uica-stack":               "0.10.2",
         "uica-widgets":             "0.9.5",
-        "codingpolicyjs":           "0.1.8"
+        "codingpolicyjs":           "1.0.0"
     },
     "keywords": [
         "single",
