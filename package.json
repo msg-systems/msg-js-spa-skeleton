@@ -11,9 +11,9 @@
         "url":  "https://github.com/msg-systems/uica-skeleton/issues"
     },
     "dependencies": {
-        "delivery-packer":          "0.2.0",
-        "uica-stack":               "0.10.2",
-        "uica-widgets":             "0.9.5",
+        "delivery-packer":          "0.3.0",
+        "uica-stack":               "1.0.0-beta.1",
+        "uica-widgets":             "1.0.0-beta.1",
         "codingpolicyjs":           "1.0.0"
     },
     "keywords": [

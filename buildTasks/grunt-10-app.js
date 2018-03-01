@@ -24,7 +24,9 @@ module.exports = function (grunt) {
                 options: {
                     sourceMap: true,
                     "presets": [
-                        "env"
+                        ["env", {
+                            "modules": false
+                        }]
                     ]
                 },
                 files: [
