@@ -1,8 +1,8 @@
-cs.ns('___config.package___');
+cs.ns("___config.package___")
 ___config.package___.view = cs.clazz({
-    extend:   app.fw.abstract.view,
+    extend: app.fw.abstract.view,
     dynamics: {
-        markupName: '___config.id___'
+        markupName: "___config.id___"
     },
-    protos:   {}
+    protos: {}
 })

@@ -1,4 +1,4 @@
-cs.ns('___config.package___')
+cs.ns("___config.package___")
 ___config.package___.ctrl = cs.trait({
     protos: {
 
@@ -29,7 +29,7 @@ ___config.package___.ctrl = cs.trait({
             this.subscribeDataService("updateProject", (project, result) => {
                 // (RE-) IMPORT the loaded data in the datamanager
                 //return app.util.EntityCreateUtil.importWorkGroup(project.id, result);
-                return result;
+                return result
             })
 
             this.subscribeDataService("deleteProject", (/*project*/) => {

@@ -1,4 +1,4 @@
-cs.ns('___config.package___')
+cs.ns("___config.package___")
 ___config.package___.ctrl = cs.clazz({
     extend: app.fw.root.ctrl,
     mixin: [
@@ -12,7 +12,7 @@ ___config.package___.ctrl = cs.clazz({
 
         create () {
             this.base(___config.package___.model, ___config.package___.view)
-            cs(this).property('ComponentJS:state-auto-increase', true)
+            cs(this).property("ComponentJS:state-auto-increase", true)
             // create a header component -> the name "header" must be used as scope name if a scoped socket is used for this component in the view
             this.header = this.view.create("header", app.ui.composite.header.ctrl)
             this.vueExampleComponent = this.view.create("vueExample", app.ui.composite.vueExample.ctrl)
@@ -28,23 +28,23 @@ ___config.package___.ctrl = cs.clazz({
             //
             //    M A R K U P   L O A D I N G
             //
-            cs(this).guard('prepare', +1)
+            cs(this).guard("prepare", +1)
             try {
                 $(document).ready(() => {
                     $.markup.load(() => {
-                        cs(this).guard('prepare', -1)
+                        cs(this).guard("prepare", -1)
                     })
                 })
             } catch (e) {
-                cs(this).guard('prepare', -1)
+                cs(this).guard("prepare", -1)
             }
         },
 
         prepare () {
             this.base()
 
-            this.observeOwnModel('global:data:currentUser', (ev, currentUser) => {
-                const user = this.model.value('global:data:currentUser')
+            this.observeOwnModel("global:data:currentUser", (ev, currentUser) => {
+                const user = this.model.value("global:data:currentUser")
                 if (user && user !== currentUser) {
                     // Es ist bereits ein Benutzer angemeldet gewesen.
                     // Nun wird ein neuer User angemeldet - zur Sicherheit laden wir die Anwendung neu um alle
@@ -56,15 +56,15 @@ ___config.package___.ctrl = cs.clazz({
                     app.reload()
                 } else if (currentUser && user !== currentUser) {
                     // when everything is done the guard can be resetted
-                    cs(this).guard('ready', 0)
+                    cs(this).guard("ready", 0)
                 }
             })
 
         },
 
         render () {
-            cs(this).guard('ready', +1)
-            this.service.call('whoAmI', (success, result, loginNeeded) => {
+            cs(this).guard("ready", +1)
+            this.service.call("whoAmI", (success, result, loginNeeded) => {
                 if (success) {
                     this.handleCurrentUser(result)
                 } else if (loginNeeded) {
@@ -76,35 +76,35 @@ ___config.package___.ctrl = cs.clazz({
                     app.shutdown()
                 }
                 if (success || loginNeeded) {
-                    cs(this).guard('ready', 0)
+                    cs(this).guard("ready", 0)
                 }
             })
         },
 
         // TO Test Service Calls
-       /* ready () {
-            this.base()
-            this.publishEventToParent("readProjects", projects => {
-                var p1 = projects[1];
-                p1.designation = "Test"
-                this.publishEventToParent("updateProject", p1, updatedP => {
-                    console.log(updatedP)
-                    var newP = {publicID: "neuese Projekt", designation: "neues Project"}
-                    this.publishEventToParent("createProject", newP,  createdP => {
-                        console.log(createdP)
-                        this.publishEventToParent("deleteProject", projects[0],  () => {
-                            console.log("delete success")
-                            this.publishEventToParent("readProjects", projects => {
-                                console.log(projects)
-                            }, this.onError.bind(this))
-                        }, this.onError.bind(this))
-                    }, this.onError.bind(this))
-                }, this.onError.bind(this))
-            }, this.onError.bind(this))
-        },*/
+        /* ready () {
+             this.base()
+             this.publishEventToParent("readProjects", projects => {
+                 var p1 = projects[1];
+                 p1.designation = "Test"
+                 this.publishEventToParent("updateProject", p1, updatedP => {
+                     console.log(updatedP)
+                     var newP = {publicID: "neuese Projekt", designation: "neues Project"}
+                     this.publishEventToParent("createProject", newP,  createdP => {
+                         console.log(createdP)
+                         this.publishEventToParent("deleteProject", projects[0],  () => {
+                             console.log("delete success")
+                             this.publishEventToParent("readProjects", projects => {
+                                 console.log(projects)
+                             }, this.onError.bind(this))
+                         }, this.onError.bind(this))
+                     }, this.onError.bind(this))
+                 }, this.onError.bind(this))
+             }, this.onError.bind(this))
+         },*/
 
-        userLanguage() {
-            return this.model.value('global:data:userLanguage')
+        userLanguage () {
+            return this.model.value("global:data:userLanguage")
         },
 
         /**
@@ -120,12 +120,12 @@ ___config.package___.ctrl = cs.clazz({
                 result = JSON.parse(text)
                 // 1a.) Ein ungültiges Response Object wird auch in einen Fehler umgewandelt
                 if (!this.hasError(result)) {
-                    throw new Error('The parsed result object is no legal error object.')
+                    throw new Error("The parsed result object is no legal error object.")
                 }
             } catch (e) {
                 let textSnippet = text.substring(0, Math.min(text.length - 1, 20))
                 if (text.length >= 20) {
-                    textSnippet += '...'
+                    textSnippet += "..."
                 }
                 //1b.) und ein eigenes error Object wird erzeugt
                 result = {
@@ -145,7 +145,7 @@ ___config.package___.ctrl = cs.clazz({
 
         handleCurrentUser (userObj) {
             //const user = app.util.EntityCreateUtil.importUsers(userObj)
-            this.model.value('global:data:currentUser', userObj)
+            this.model.value("global:data:currentUser", userObj)
         }
 
     }

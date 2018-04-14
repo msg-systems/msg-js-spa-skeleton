@@ -1,4 +1,4 @@
-cs.ns('___config.package___')
+cs.ns("___config.package___")
 ___config.package___.model = cs.clazz({
     extend: app.fw.root.model,
     mixin: [
@@ -10,8 +10,8 @@ ___config.package___.model = cs.clazz({
         create () {
             this.base()
             cs(this).model({
-                "global:data:currentUser": {value: null, valid: "object"},
-                "global:data:userLanguage": {value: "de", valid: "string", store: true}
+                "global:data:currentUser": { value: null, valid: "object" },
+                "global:data:userLanguage": { value: "de", valid: "string", store: true }
             })
         }
     }
