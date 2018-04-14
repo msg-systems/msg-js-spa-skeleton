@@ -22,8 +22,8 @@ ___config.package___.ctrl = cs.clazz({
             this.base()
 
             const lang = this.userLanguage()
-            moment.locale((lang == "en" || lang == "de") ? lang : "de")
-            numeral.locale((lang == "en" || lang == "de") ? lang : "de")
+            moment.locale((lang === "en" || lang === "de") ? lang : "de")
+            numeral.locale((lang === "en" || lang === "de") ? lang : "de")
 
             //
             //    M A R K U P   L O A D I N G
