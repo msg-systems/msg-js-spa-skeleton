@@ -8,4 +8,4 @@ app.sv = cs.clazz({
     ],
     dynamics: {},
     protos: {}
-});
+})

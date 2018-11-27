@@ -7,4 +7,4 @@ app.dm.define("User", "AbstractEntity", {
     "mobile": "string",
     "email": "string",
     "active": "boolean"
-});
+})

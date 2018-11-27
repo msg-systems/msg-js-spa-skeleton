@@ -1,8 +1,8 @@
-cs.ns('___config.package___');
+cs.ns("___config.package___")
 ___config.package___.view = cs.clazz({
     extend: app.fw.root.view,
     dynamics: {
-        markupName: '___config.id___',
+        markupName: "___config.id___",
         container: null,
         useDefaultPlug: false
     },
@@ -20,7 +20,7 @@ ___config.package___.view = cs.clazz({
 
         prepareMaskReferences () {
             this.base()
-            this.container = $('body')
+            this.container = $("body")
         }
 
     }
