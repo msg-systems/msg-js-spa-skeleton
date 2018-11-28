@@ -6,5 +6,5 @@
 import:
 - deliveryDev.yaml
 build:
-- "!spa-fw.componentjs.debugger"
-- "!spa-fw.componentjs.testdrive"
+- "!uica.componentjs.debugger"
+- "!uica.componentjs.testdrive"
