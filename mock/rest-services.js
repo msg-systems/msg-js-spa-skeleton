@@ -1,5 +1,5 @@
 "use strict"
-let rest = require('connect-rest')
+let rest = require('connect-rest-msg')
 
 module.exports = (context) => {
     //

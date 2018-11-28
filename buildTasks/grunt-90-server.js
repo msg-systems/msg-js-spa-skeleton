@@ -22,7 +22,4 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask("serverDev", ["lite-proxyserver", "focus:watchDev"]);
-    grunt.registerTask("server", ["lite-proxyserver", "focus:watchProd"]);
-
 };
